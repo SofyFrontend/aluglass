@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="sofyfrontend & LanzaroteWeb">
+    <meta name="description" content="Empresa de aluminio y cristal en Lanzarote">
+    <meta name="keywords"
+        content="Aluminio y cristal, Empresa de aluminio y cristal, Ventanas de aluminio, Cristales para edificios, Instalación de vidrio, Puertas de cristal y aluminio, Cerramientos de aluminio, Aluminio para ventanas, Cristales de seguridad, Paneles de vidrio, Aluminio a medida, Cristales decorativos, Fabricante de aluminio y vidrio, Aluglass aluminio y cristal, Fabricación de cerramientos de vidrio, Aluminio para fachadas, Instalación de ventanas de aluminio, Servicios de vidrio para construcción, Cristales a medida, Cerramientos de cristal para terrazas, Aluminio para proyectos industriales, Puertas correderas de aluminio, Vidrio de seguridad para viviendas, Carpintería de aluminio y vidrio, Reparación de cristales, Escaparates de aluminio, Aislamiento con vidrio, Cortinas de cristal, Aluminio y cristal en Lanzarote, Aluminio y cristal en Canarias, Cristales y aluminio en Arrecife, Instalación de vidrio en Lanzarote,  Instalación de vidrio en canarias,  Instalación de vidrio en Arrecife, Aluminio y vidrio en Lanzarote, Aluminio y vidrio en Canarias, Aluminio y vidrio en Arrecife, Aluminio para edificios, Cristales para ventanas, Vidrio templado, Aluminio extruido, Soluciones de vidrio para empresas, Arrecife, Tias, Teguise, San Bartolome, Haria, Yaiza,Tinajo, Playa Blanca, Costa de Teguise, Playa Honda, Puerto del Carmen,">
+    <!-- añadir palabras claves -->
+    <title>Aluglass </title>
+    <link rel="icon" href="imagenes/aluglass-logo.jpg">
+    <link href="estilo/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="imagenes/aluglass-logo.jpg" alt="Logo de Aluglass">
+            </div>
+            <div id="menu">
+                <a href="#logo">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="imagenes/header-1.jpg" alt="imagen de cabecera 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="imagenes/header-2.jpg" alt="imagen de cabecera 2">
+            </div>
+            <div class="mySlides fade">
+                <!-- ! esta imagen hay que cambiarla-->
+                <img src="imagenes/header-1.jpg" alt="imagen de cabecera 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div id="cabecera">
+            <h1>
+                Aluglass
+            </h1>
+            <br>
+            <p>
+                Más de 25 años de experiencia en el sector del aluminio y del cristal nos avalan
+            </p>
+        </div>
+    </header>
+    <section id="nosotros">
+        <h2><!--poner aqui el titulo de la sección --></h2>
+    </section>
+    <section id="servicios">
+        <h2><!--poner aqui el titulo de la sección --></h2>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p> ¿Quieres embellecer y proteger tus espacios exteriores e interiores? Contáctanos para recibir asesoramiento
+            profesional y un presupuesto personalizado. Trabajamos incansablemente para
+            garantizar tu satisfacción.
+        </p><br>
+        <p>aluglass@grupoaluweb.es</p><br>
+        <p>Tel:<a href="http://wa.me/34622420185" target="_blank"> +34 622 42 01 85 </a></p><br>
+        <p class="iconos-redes">
+            <a href="https://www.facebook.com/profile.php?id=61576628741236" class="img-redes" target="_blank">
+                <img src="imagenes/iconos/facebook.png" alt="icono de facebook con enlace al perfil">
+            </a>
+            <a href="https://www.instagram.com/aluglasslanzarote/" class="img-redes" target="_blank">
+                <img src="imagenes/iconos/instagram.png" alt="icono de instragran con enlace al perfil">
+            </a>
+        </p>
+    </section>
+    <p>Diseño y desarrollo <a href="http://sofyfrontend.es/" target="_blank">Sofy Frontend</a> & LanzaroteWeb </p>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
