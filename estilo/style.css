@@ -289,6 +289,24 @@ img {
         margin-bottom: 10px;
         padding-left: 10px;
     }
+    aside{
+    width: 50px;
+    position: fixed;
+    right:20px;
+    top:500px;
+    z-index: 1;
+    margin-right: 2px;
+    
+}
+.flotante-text{
+    color: white;
+    background-color: var(--azul-oscuro);
+    padding: 5px;
+}
+    .flotante-icon{
+        width: 100%;
+    }
+    
 }
 
 /* aqui terminan los estilos para movil */
@@ -302,6 +320,7 @@ img {
   */
 /* aqui empiezon los estilos para pantalla grande */
 @media screen and (min-width:600px) {
+    
     nav {
         display: flex;
         background-color: var(--azul-oscuro);
@@ -558,4 +577,21 @@ img {
     .img-redes {
         margin-left: 20px;
     }
+aside{
+    width: 50px;
+    position: fixed;
+    left: 20px;
+    top:500px;
+    z-index: 1;
+}
+.flotante-text{
+    background-color: var(--azul-oscuro);
+    color:white;
+    padding: 5px;
+    border-radius: 50px;
+}
+    .flotante-icon{
+        width: 100%;
+    }
+    
 }
