@@ -593,5 +593,11 @@ aside{
     .flotante-icon{
         width: 100%;
     }
-    
+    #Galeria{
+         max-width: 60%;
+        margin: 0 auto;
+    }
+    #proyecto1 ul li{
+        list-style: none;
+    }
 }
